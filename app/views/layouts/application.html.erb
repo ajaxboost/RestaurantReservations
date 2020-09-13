@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HalalTables | Book Halal In NYC</title>
+    <%= favicon_link_tag asset_path('favicon-32x32.png') %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <%#= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,900|Oswald|Signika:400,500,600,700|Sriracha&display=swap" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all'%>
+    <%= javascript_include_tag 'application' %>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <script type="text/javascript">
+      window.headerLogo = "<%= image_url('logo-2.png') %>";
+      window.mapViewContainer = "<%= image_url('map-button-bkg.png') %>";
+      window.afganDish = "<%= image_url('afgan-dish.jpg') %>";
+      window.burgersDish = "<%= image_url('burgers-dish.jpeg') %>";
+      window.middleEasternDish = "<%= image_url('middle-eastern-dish.jpeg') %>";
+      window.turkishDish = "<%= image_url('turkish-dish.jpeg') %>";
+      window.indianDish = "<%= image_url('indian-dish.jpeg') %>";
+      window.bbqDish = "<%= image_url('bbq-dish.jpg') %>";
+      window.seafoodDish = "<%= image_url('seafood-dish.jpg') %>";
+      window.veggieDish = "<%= image_url('veggie-dish.jpg') %>";
+      window.nycFive = "<%= image_url('5boroughs.jpg') %>";
+      window.wallstreet = "<%= image_url('wallstreet.jpeg') %>";
+      window.manhattan = "<%= image_url('manhattan.jpg') %>";
+      window.brooklyn = "<%= image_url('brooklyn.jpg') %>";
+      window.queens = "<%= image_url('queens.jpg') %>";
+      window.bronx = "<%= image_url('bronx.jpg') %>";
+      window.statenIsland = "<%= image_url('staten-island.jpg') %>";
+    </script>
+  </head>
+  <body> 
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+.show-page{
+  background-color: #FFF;
+  margin: auto;
+  width: 90%;
+  // height: auto !important;
+}
+// .clearfix::after {
+//   content: ":)";
+//   clear: both;
+//   display: block;
+// }
+
+#show-page-splash{
+  height: 280px;
+  cursor: pointer;
+  position: relative;
+}
+
+.splash-img{
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#favorite-button{
+  background-color: #fff;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  font-weight: 600;
+  
+}
+
+#favorite-button:hover{
+  border: 2px solid #da3743;
+}
+
+.is-fave{
+  background-color: #DA3743 !important;
+  color: white !important;
+}
+
+.splash-favorite-button{
+  padding: calc(.75rem - 1px) calc(1rem - 1px);
+  display: flex;
+}
+
+.bookmark-icon{
+  color: black;
+  padding: 2px 5px;
+}
+
+.page-content{
+  margin: auto;
+}
+
+.show-page-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+
+.left-content-container{
+  margin-right: 40px;
+}
+
+.left-content{
+  max-width: 740px;
+  margin: auto;
+  position: relative;
+}
+
+.right-content{
+  position: relative;
+}
+
+#nav-list{
+  position: relative;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  display: flex;
+  border-bottom: 1px solid #d8d9db;
+  max-width: 740px;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  height: 48px;
+  top: -40px;
+
+}
+
+.sticky{
+  position: fixed !important;
+  top: 0 !important;
+  // padding-top: 45px;
+}
+
+// .sticky + #nav-list{
+//   padding-top: 45px;
+// }
+
+
+#nav-list li{
+  // background-color: red;
+  font-weight: 600;
+  padding: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+#nav-list li:hover {
+  color: #DA3743;
+  border-bottom: 1px solid #DA3743;
+
+}
+
+
+#restaurant-title{
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d8d9db;
+  margin: 0 0 1rem;
+}
+
+.restaurant-stats{
+  display: flex;
+  margin-bottom: .675rem;
+  white-space: nowrap;
+}
+
+.restaurant-stats > section{
+  margin-right: 15px;
+}
+
+.restaurant-stats span{
+  margin-left: 5px;
+}
+
+#restaurant-overview {
+  line-height: 24px;
+  overflow-wrap: break-word;
+  margin-right: 10px;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  max-height: 143px;
+  overflow: hidden;
+}
+
+.display-subheader{
+  padding: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 21px;
+  border-bottom: 1px solid #d8d9db;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.overall-review-left > p{
+  margin: 10px 0;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+#show-review span{
+  padding-left: 10px;
+  font-weight: 400;
+
+}
+
+.ratings-breakdown{
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: 10px;
+
+}
+
+.ratings-breakdown > li{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 0.5rem;
+  position: relative;
+  text-align: center;
+  border-right: .5px solid #d8d9db;    
+}
+.ratings-breakdown > li:last-child{
+  border-right: 0px;
+}
+
+.ratings-breakdown > li > span{
+  padding-left: 15px;
+  // text-align: center;
+  display: block;
+  // background-color: red;
+  font-weight: 500;
+  line-height: 1.33;
+
+}
+.ratings-breakdown > li > p{
+  text-align: center;
+  display: block;
+  font-weight: normal;
+  text-transform: capitalize;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+.overall-review-container{
+  display: flex;
+  border-bottom: 1px solid #d8d9db;
+  padding: 0 15px;
+}
+
+.overall-review-left{
+  width: 50%;
+}
+
+.overall-review-right{
+  width: 50%;
+}
+
+.review-bars{
+  padding: 20px;
+  
+}
+
+.back-bar{
+  cursor: pointer;
+  align-items: center;
+  margin-left: 10px;
+  height: 25px;
+  width: 250px;
+  border: 1px solid #d8d9db;
+
+}
+
+.back-bar:hover{
+  border: 1px solid #DA3743;
+}
+
+#bar{
+  display: flex;
+  padding-bottom: 0.5rem;
+  align-items: center;
+}
+
+.bar-label{
+  padding-top: 2px;
+}
+
+.bar-percentage{
+  background-color: #DA3743;
+  height: 23px;
+}
+
+

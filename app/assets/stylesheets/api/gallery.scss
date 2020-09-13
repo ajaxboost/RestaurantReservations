@@ -1,0 +1,31 @@
+#gallery-div{
+  margin: 10px 0;
+  // position: relative;
+}
+
+
+.photo-container{
+  display: flex;
+  overflow: auto;
+  height: 315px;
+  margin-bottom: 15px;
+}
+
+.image-container > img{
+  padding-right: 10px;
+}
+
+
+.image-container > img{
+  width: 300px;
+  height: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .scroll-right{
+    display: none;
+  }
+  .scroll-left{
+    display: none;
+  }
+}
+

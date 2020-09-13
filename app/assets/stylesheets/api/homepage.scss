@@ -1,0 +1,272 @@
+#homepage-container{
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+
+.top-cuisines-container{
+  position: relative;
+}
+
+
+.home-subheaders{
+  border-bottom: 1px solid #d8d9db;
+  padding: 1rem .5rem;
+  margin: 0 0 1rem;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.cuisines-list{
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.cuisines-list::-webkit-scrollbar {
+  height: 0;
+  background: transparent;
+}
+
+*::-webkit-scrollbar {
+  height: 0;
+  background: transparent;
+}
+.scroll-left, .scroll-right{
+  position: absolute;
+  background-color: white;
+  z-index: 14;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  border: 1px solid #d8d9db;
+  box-shadow: 0 2px 8px rgba(153,153,153,.4);
+  cursor: pointer;
+  top: 16%;
+}
+
+.scroll-left{
+  left: -15px;
+  display: none;
+}
+
+.scroll-right{
+  right: -15px;
+}
+
+.scroll-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 12px;
+  font-size: 16px;
+}
+
+.cuisine-list-item, .borough{
+  position: relative;
+  min-width: 13rem;
+  height: 13rem;
+  border-radius: 4px;
+  margin-right: 10px;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-color: #c84f29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  // padding: 0 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.cuisine-title-container, .borough-title-container{
+  position: absolute;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.cuisine-title, .borough-title{
+  color: #fff;
+  text-shadow: rgba(0,0,0,.25) 0 2px 2px;
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cuisine-list-item img{
+  border-radius: 4px;
+}
+
+.borough img{
+  border-radius: 4px;
+  height: 100%;
+}
+
+.boroughs-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.borough{
+  margin: 5px;
+  background-color: red;
+  height: 150px;
+  min-width: 225px;
+  width: calc((100% - (16px * 11)) * 4 / 12 + (3 * 16px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-content{
+  margin: 10px;
+}
+
+@media only screen and (min-width: 100rem){
+  #homepage-content{
+      max-width: 80rem;
+      margin: auto;
+  }
+}
+@media all and (max-width: 800px) {
+  .splash-form-container, #homepage-container, .index-page-container {
+    width: 100% !important;
+    overflow: hidden;
+  }
+
+  .splash-form-title{
+    font-size: 28px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #restaurant-title{
+    font-size: 8vw !important;
+  }
+
+  .show-page {
+    width: 100% !important;
+  }
+
+}
+
+@media all and (max-width: 600px) {
+  .index-page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .restaurants-index{
+    width: 100% !important;
+  }
+
+  .restaurant-details a {
+    font-size: 4vw;
+    white-space: normal;
+    line-height: 1rem;
+  }
+
+  .restaurant-details h1 {
+    font-size: 4vw !important;
+    white-space: normal !important;
+    line-height: 1.2rem !important;
+
+  }
+
+  .filter-bar {
+    width: 90%;
+  }
+
+  .boroughs-list {
+    flex-direction: column !important;
+  }
+
+  .borough {
+    width: 98% !important;
+    margin: 5px auto;
+  }
+
+  .index-buttons:last-child {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .right-content{
+    display: none;
+  }
+
+  .left-content-container{
+    margin-right: 0 !important;
+  }
+
+  .show-page-reserve{
+    display: block !important;
+  }
+
+  .details-container{
+    display: flex !important;
+  }
+
+}
+.wrapper {
+  margin: 25px 0;
+}
+.wrapper .heading{
+  font-size: 22px;
+  padding: 0 15px 15px;
+  margin: 0;
+}
+.wrapper .content-wrapper .col {
+  width: 33.33%;
+  padding: 0;
+  display: inline-block;
+  margin: 0 -2px;
+}
+.wrapper .content-wrapper .col .content-wrap {
+  padding: 0 15px;
+}
+.wrapper .content-wrapper .col .img {
+  max-width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.wrapper .content-wrapper .col .title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrapper .content-wrapper .content p {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: 20px;
+}
+@media(max-width: 1024px){
+  .wrapper .heading{
+    margin-bottom: 25px;
+  }
+  .wrapper .content-wrapper .col {
+    width: 50%;
+  }
+  .wrapper .content-wrapper .col .content-wrap {
+    margin-bottom: 30px;
+  }
+}

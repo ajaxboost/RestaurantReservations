@@ -1,0 +1,306 @@
+.header-bar {
+  font-family: 'Muli', sans-serif;
+  box-sizing: border-box;
+  padding: 0 20px;
+  background-color:white;
+  height: 54px;
+  width: 90%;
+  margin: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.signin-btn, .signup-btn{
+  display: block;  
+  padding: 0 16px;
+  line-height: 32px;
+  font-size: 14px;
+  margin: 5px 0 0;
+  border-radius: 3px;
+}
+
+.signin-btn{
+  background-color: transparent;
+}
+
+.signup-btn:hover{
+  background-color: #1c627a;
+}
+
+.signup-btn{
+  transition: background-color 300ms ease-out;
+  background-color: #237b98;
+  color: white;
+}
+
+.header-buttons{
+  padding: 10px
+}
+
+.sign-in{
+  background-color: white;
+  color: black;
+}
+
+.right-header li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+#change-location{
+  display: flex;
+  padding: 15px 0px 15px 15px;
+  border-left: .5px solid #E0E0E0;
+  border-right: .5px solid #E0E0E0;
+  margin-left: 15px;
+
+}
+
+
+.change-location-icon {
+  font-size: 24px;
+  padding-right: 15px;
+  color: #E0E0E0;
+  cursor: pointer;
+  transition: color 300ms ease-out;
+}
+
+
+#change-location:hover .dropdown-icon{
+  color: black;
+}
+
+
+
+.calendar-icon {
+  font-size: 18px;
+  padding: 5px 15px;
+  border-right: .5px solid #E0E0E0;
+  color: #999;
+}
+
+.greetings, .left-header {
+  display: flex;
+}
+
+.greetings p{
+  padding-right: 15px;
+}
+
+.greetings:hover .dropdown-icon{
+  color: black;
+}
+
+.right-header, .header-buttons{
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  right: 5%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header-menu-triangle{
+  display: none;
+  box-shadow: -1px -1px 0 0px rgba(0,0,0,.15);
+  z-index: 1;
+  border-style: solid;
+  border-width: 6px;
+  border-color:#fff transparent transparent #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 40px;
+  left: 1px;
+}
+.header-menu{
+  display: none;
+  position: absolute;
+  top: 43px;
+  left: -130px;
+  color: #666;
+  box-sizing: border-box;
+  line-height: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+  margin: 2px;
+  border-radius: 3px;
+  width: 232px;
+}
+
+.header-menu li, .location li, .sidenav-menu li{
+  padding: .8rem 1rem;
+  cursor: pointer;
+}
+
+.header-menu li:hover, .sidenav-menu li:hover {
+  background-color: rgba(0,0,0,.03);
+}
+
+.header-logo{
+  display: flex;
+  align-self: center;
+  background-color: white;
+}
+
+.header-logo img{
+  height: 37px;
+  width: 135px;
+  cursor: pointer;
+}
+
+.header-nav, .nav-bar-calender, .nav-bar-location, .main-menu, #hamburger-icon{
+  position: relative;
+}
+
+
+.calender-triangle, .location-triangle{
+  display: none;
+  box-shadow: -1px -1px 0 0px rgba(0,0,0,.15);
+  z-index: 1000;
+  border-style: solid;
+  border-width: 6px;
+  border-color:#fff transparent transparent #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 45px;
+  left: 30px;
+}
+.calender, .location {
+  display: none;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
+  width: 200px;
+  top: 50px;
+  left: -25px;
+  white-space: pre-wrap;
+
+}
+
+.nav-bar-calender:hover .calender, 
+  .nav-bar-calender:hover .calender-triangle,
+    .nav-bar-location:hover .location,
+      .nav-bar-location:hover .location-triangle,
+        .main-menu:hover .header-menu,
+          .main-menu:hover .header-menu-triangle {
+            display: block;
+          }
+
+
+
+.location {
+  width: 318px;
+  z-index: 1;
+}
+
+.location li{
+  font-weight: 600;
+  display: flex;
+  color: #999;
+  justify-content: space-between;
+}
+
+.location li:hover {
+  background-color: rgba(0,0,0,.03);
+  color: #237b98;
+  background: #eef4fb;
+  border-left: 3px solid #237b98;
+}
+
+
+
+.menu-sub-header{
+    text-transform: uppercase;
+    color: #666;
+    font-size: .875rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    white-space: nowrap;
+    font-weight: 500;
+    text-align: center;
+}
+
+.no-reservations{
+  padding: 16px;
+}
+
+.hamburger-icon{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  padding: 15px;
+  font-size: 25px;
+  z-index: 1000;
+  right: -10px;
+}
+
+.sidenav-menu {
+  // display: none;
+  font-family: 'Muli', sans-serif;
+  height: 100%;
+  width: 220px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color:white;
+  border-left: 1px solid rgba(0,0,0,.12);
+  box-shadow: -1px -1px 0 0 rgba(0,0,0,.15);
+  overflow: scroll;
+
+
+}
+
+.sidenav{
+  display: none;
+  // transition: .15s right ease-in-out,.15s right ease-in-out;
+  //   transition-property: right, right;
+  //   transition-duration: 0.15s, 0.15s;
+  //   transition-timing-function: ease-in-out, ease-in-out;
+  //   transition-delay: 0s, 0s;
+
+}
+
+.sidbar-screen{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  // background-color: blue;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.top-bar{
+  height: 54px;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+}
+
+.demo-button{
+  cursor: pointer;
+  color: black;
+  transition: background-color 300ms ease-out;
+}
+.demo-button:hover{
+  color: white;
+  background-color: #DA3743;
+}
+
+
+
+
+@media all and (max-width: 800px) {
+  .right-header, .nav-bar-location, .header-buttons{
+    display: none;
+  }
+  .hamburger-icon{
+    display: block;
+  }
+
+  .header-bar {
+    width: 100%;
+  }
+}
